@@ -1,4 +1,4 @@
-# This is a fork of foxlet/macOS-Simple-KVM, so make sure to check them out!
+# This is a fork of kholia/OSX-KVM, so make sure to check them out!
 This is an automatic installer for making a MacOS VM with GPU passthrough.
 
 # Preperations
