@@ -15,7 +15,7 @@ For you lame Intel users, just enable
 And then clone the repository by typing:
 To start, make sure to clone the repository in the folder you want your VM to be stored.
 ```
-git clone https://github.com/BigAnteater/MacOS-KVM-GPU-Passthrough && cd MacOS-KVM-GPU-Passthrough
+git clone --depth 1 --recursive https://github.com/BigAnteater/MacOS-KVM-GPU-Passthrough && cd MacOS-KVM-GPU-Passthrough
 ```
 
 # Setting up GRUB
