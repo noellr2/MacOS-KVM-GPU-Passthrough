@@ -24,6 +24,7 @@ clear
 echo "Adding $USERNAME to kvm and libvirt groups..."
 gpasswd -M $USERNAME kvm
 gpasswd -M $USERNAME libvirt
+sed -i "s/amongysus/$USERNAME/g" qemu.conf
 sleep 2s
 clear
 mv libvirtd.conf /etc/libvirt
