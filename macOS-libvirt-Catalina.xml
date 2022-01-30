@@ -157,12 +157,6 @@
       <target type='virtio' name='org.qemu.guest_agent.0'/>
       <address type='virtio-serial' controller='0' bus='0' port='1'/>
     </channel>
-    <graphics type='spice' autoport='yes'>
-      <listen type='address'/>
-    </graphics>
-    <video>
-      <model type="vga" vram="65536" heads="1" primary="yes"/>
-    </video>
     <!-- If you wanna passthrough GPU, make sure the gfx and audio are in the same bus (like 0x01) but different function (0x00 and 0x01)-->
     <!-- <hostdev mode='subsystem' type='pci' managed='yes'>
       <driver name='vfio'/>
