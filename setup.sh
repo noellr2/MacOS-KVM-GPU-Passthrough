@@ -35,10 +35,10 @@ sleep 1s
 
 DIR=$(pwd)
 
-sed -i "s|/home/CHANGEME/OSX-KVM|$DIR|g" macOS-libvirt-Catalina.xml > macOS.xml
+sed -i "s|/home/CHANGEME/OSX-KVM|$DIR|g" macOS-libvirt-Catalina.xml
 
-virt-xml-validate macOS.xml
-virsh --connect qemu:///system define macOS.xml
+virt-xml-validate macOS-libvirt-Catalina.xml
+virsh --connect qemu:///system define macOS-libvirt-Catalina.xml
 
 sleep 2s
 
