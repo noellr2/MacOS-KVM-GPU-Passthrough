@@ -33,8 +33,9 @@ clear
 echo "Now we will be adding the VM's XML to Virt-Manager."
 sleep 1s
 
+DIR=$(pwd)
 
-sed -i "s|/CHANGEME/$USER/|$(pwd)/|g" macOS-libvirt-Catalina.xml > macOS.xml
+sed -i "s|/home/CHANGEME/OSX-KVM|$DIR|g" macOS-libvirt-Catalina.xml > macOS.xml
 
 virt-xml-validate macOS.xml
 virsh --connect qemu:///system define macOS.xml
